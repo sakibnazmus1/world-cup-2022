@@ -1,6 +1,9 @@
 /*--------- font-------- */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,500&display=swap');
 
+* {
+    box-sizing: border-box;
+}
 
 /*----- common styles---- */
 body {
@@ -8,16 +11,22 @@ body {
 
 }
 
+.container {
+    max-width: 1321px;
+    margin: 0 auto;
+}
+
+/*---------
+ section 1 all styles
+ ---------*/
 .first {
     display: flex;
-
-    position: absolute;
-    width: 1321px;
-    height: 582px;
-    left: 140px;
-    top: 76px;
-    /* margin-left: 10em; */
-    /* margin-top: 4em; */
+    padding: 0 108px;
+    align-items: center;
+    /* height: 582px; */
+    /* width: 1321px; */
+    justify-content: center;
+    margin-top: 80px;
     background: #161616;
     border-radius: 30px;
     color: white;
@@ -25,13 +34,7 @@ body {
 }
 
 .paragraph-1 {
-    position: absolute;
-    width: 531px;
-    height: 424px;
-    left: 90px;
-    top: 50px;
-
-
+    width: 50%;
 }
 
 .paragraph-1 h1 {
@@ -41,17 +44,12 @@ body {
 
 .header {
 
-    position: absolute;
-    width: 900px;
-    height: 700px;
-    left: 750px;
-    top: 50px;
-    bottom: 90px;
+    width: 50%;
+
 }
 
 .header img {
-    height: 533px;
-    width: 450px;
+    width: 100%;
 }
 
 .link-button {
@@ -61,4 +59,25 @@ body {
     color: white;
     font-weight: 700;
     border-radius: 8px;
+}
+
+.link-button i {
+    margin-left: 15px;
+
+}
+
+/* section 2 all styles */
+.articles {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.main-section {
+    display: flex;
+    margin-top: 110px;
+    justify-content: space-between;
+}
+
+.transfer-btn {
+    display: block;
 }
