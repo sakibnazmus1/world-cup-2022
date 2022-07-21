@@ -116,6 +116,10 @@ body {
     margin-right: 35px;
 }
 
+.side-bar .red {
+    background-color: red;
+}
+
 
 
 .transfer-btn {
@@ -151,6 +155,6 @@ footer h3 {
 }
 
 .footer {
-    margin: 15px;
-    justify-content: space-between;
+    display: flex;
+    justify-content: space-around;
 }
